@@ -1,0 +1,147 @@
+/* nav바 상단 */
+.info-box {
+  display: flex;
+  justify-content: center;
+}
+.info-box a:hover {
+  text-decoration: none;
+}
+
+/* nav바 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8; /* 배경색을 조정하세요 */
+}
+
+nav {
+  background-color: #2b3d69;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:hover {
+  background-color: orangered;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+nav .menu-ul {
+  display: flex;
+}
+
+.sub-1div {
+  display: none;
+  position: absolute;
+  background-color: #484848; /* 드롭다운 배경색 설정 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  border-radius: 10px;
+  z-index: 1; /* 다른 요소 위에 표시 */
+}
+
+.menu-li:hover .sub-1div {
+  display: block;
+}
+
+/* nav바 li, ul 점 지우기 */
+.menu-li,
+.sub-1dul,
+.sub-1dli {
+  list-style: none;
+}
+
+/* 반응형 */
+/* 화면이 작아질 때 세로로 쌓이도록 스타일이 변경 */
+@media (max-width: 768px) {
+  .menu-ul {
+    flex-direction: column;
+  }
+
+  .menu-li {
+    width: 100%;
+  }
+}
+
+/* Main content styles */
+.title-box {
+  height: 50px; /* Adjust as needed */
+  margin: 20px;
+}
+.main-box1 {
+  height: 500px; /* Adjust as needed */
+  background-color: #fff; /* Adjust as needed */
+  margin: 20px;
+  padding: 1px 1px 10px 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px #eeeeee;
+  text-align: center;
+  vertical-align: center;
+  justify-content: center;
+}
+.main-box2 {
+  height: 200px; /* Adjust as needed */
+  background-color: #fff; /* Adjust as needed */
+  margin: 20px;
+  padding: 1px 1px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px #eeeeee;
+  text-align: center;
+  vertical-align: center;
+  justify-content: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: rgb(35, 35, 35);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h2 {
+  font-size: 1.5em;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+/* Additional styles for links */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
